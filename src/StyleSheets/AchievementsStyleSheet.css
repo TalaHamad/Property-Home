@@ -1,0 +1,77 @@
+.Background
+{
+    -fx-background-image: url('../Images/background6.jpeg');
+    -fx-background-size: 100% 100%;
+}
+
+.TextFields
+{
+    -fx-background-color:#FFFFFF;
+    -fx-background-radius: 100;
+    -fx-border-color: #25383c;
+    -fx-border-radius: 100;
+}
+
+.Text1
+{
+    -fx-font-size: 50;
+    -fx-font-weight: bold;
+    -fx-fill: #ffbf00;
+    -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.8), 10, 0, 0, 0);
+}
+
+.Text2
+{
+    -fx-text-fill: #FFFFFF;
+    -fx-font-weight: bold;
+    -fx-font-size: 20;
+}
+
+.Text3
+{
+    -fx-font-weight: bold;
+    -fx-text-fill:#FFFFFF;
+    -fx-font-size: 30;
+}
+
+.Text4
+{
+    -fx-fill: #FFFFFF;
+    -fx-font-weight: bold;
+    -fx-font-size: 20;
+}
+
+.Text5
+{
+    -fx-fill: #000000;
+    -fx-font-weight: bold;
+    -fx-font-size: 30;
+}
+
+.Text6
+{
+    -fx-fill: #000000;
+    -fx-font-weight: bold;
+    -fx-font-size: 20;
+}
+
+.HomeButton
+{
+    -fx-pref-width: 65;
+    -fx-pref-height: 65;
+    -fx-padding: 10 20 10 20;
+    -fx-background-radius: 8;
+    -fx-background-position: 50%;
+    -fx-background-image: url('../Images/home.png');
+    -fx-background-color:
+        linear-gradient(#ffd65b, #e68400),
+        linear-gradient(#ffef84, #f2ba44),
+        linear-gradient(#ffea6a, #efaa22),
+        linear-gradient(#ffe657 0%, #f8c202 50%, #eea10b 100%),
+        linear-gradient(from 0% 0% to 15% 50%, rgba(255,255,255,0.9), rgba(255,255,255,0));
+}
+
+.HomeButton:pressed
+{
+    -fx-background-insets: 2 0 0 0,2 0 3 0, 2 0 4 0, 2 0 5 0;
+}

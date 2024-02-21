@@ -1,0 +1,51 @@
+.Background
+{
+    -fx-background-image: url('../Images/background11.jpeg');
+    -fx-background-size: 100% 100%;
+}
+
+.Text1
+{
+    -fx-font-size: 40;
+    -fx-font-weight: bold;
+    -fx-fill: #000000;
+}
+
+.Text2
+{
+    -fx-font-size: 17;
+    -fx-fill: #000000;
+}
+
+.AddCancelButtons
+{
+    -fx-pref-width: 85;
+    -fx-pref-height: 25;
+    -fx-background-color:
+        linear-gradient(#ffd65b, #e68400),
+        linear-gradient(#ffef84, #f2ba44),
+        linear-gradient(#ffea6a, #efaa22),
+        linear-gradient(#ffe657 0%, #f8c202 50%, #eea10b 100%),
+        linear-gradient(from 0% 0% to 15% 50%, rgba(255,255,255,0.9), rgba(255,255,255,0));
+    -fx-font-size: 12;
+    -fx-font-weight: bold;
+    -fx-text-fill: #000000;
+}
+
+.AddCancelButtons:pressed
+{
+    -fx-background-insets: 2 0 0 0,2 0 3 0, 2 0 4 0, 2 0 5 0;
+}
+
+.Rectangle
+{
+    -fx-pref-width: 568;
+    -fx-pref-height: 343;
+    -fx-arc-height: 20;
+    -fx-arc-width: 30;
+    -fx-fill: white;
+    -fx-stroke: none;
+    -fx-opacity: 0.9;
+    -fx-pref-width: 425;
+    -fx-pref-height: 94;
+}

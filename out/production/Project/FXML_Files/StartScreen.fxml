@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane fx:id="parentContainer" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="800.0" prefWidth="800.0" stylesheets="@../StyleSheets/StartScreenStyleSheet.css" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controllers.StartScreenController">
+   <Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="800.0" prefWidth="800.0" styleClass="Background">
+      <children>
+         <Pane layoutX="30.0" layoutY="612.0" prefHeight="64.0" prefWidth="740.0">
+            <children>
+               <Text layoutX="14.0" layoutY="43.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="BackgroundText" text="Discover" wrappingWidth="126.0" />
+               <ImageView fitHeight="64.0" fitWidth="29.0" layoutX="140.0" layoutY="13.0" pickOnBounds="true" preserveRatio="true">
+                  <Image url="@../Images/one.jpeg" />
+               </ImageView>
+               <Text layoutX="176.0" layoutY="40.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="BackgroundText" text="a place" wrappingWidth="108.0" />
+               <ImageView fitHeight="31.0" fitWidth="37.0" layoutX="284.0" layoutY="17.0" pickOnBounds="true" preserveRatio="true">
+                  <Image url="@../Images/two.jpeg" />
+               </ImageView>
+               <Text layoutX="327.0" layoutY="43.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="BackgroundText" text="where you'll love" wrappingWidth="248.0">
+                  <font>
+                     <Font name="System Bold Italic" size="30.0" />
+                  </font>
+               </Text>
+               <ImageView fitHeight="52.0" fitWidth="43.0" layoutX="575.0" layoutY="12.0" pickOnBounds="true" preserveRatio="true">
+                  <Image url="@../Images/three.jpeg" />
+               </ImageView>
+               <Text layoutX="627.0" layoutY="44.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="BackgroundText" text="to live" wrappingWidth="90.0">
+                  <font>
+                     <Font name="System Bold Italic" size="30.0" />
+                  </font>
+               </Text>
+            </children>
+         </Pane>
+      </children></Pane>
+   <Button fx:id="signUpButton" focusTraversable="false" layoutX="311.0" layoutY="367.0" mnemonicParsing="false" onAction="#switchToRegisterScreen" onMouseEntered="#changeCursor" prefHeight="65.0" prefWidth="200.0" styleClass="LoginRegisterButtons" text="Sign Up" />
+   <Button fx:id="logInButton" focusTraversable="false" layoutX="311.0" layoutY="292.0" mnemonicParsing="false" onAction="#switchToLoginScreen" onMouseEntered="#changeCursor" prefHeight="53.0" prefWidth="163.0" styleClass="LoginRegisterButtons" text="Log In" />
+</AnchorPane>

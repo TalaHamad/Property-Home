@@ -1,0 +1,126 @@
+.Background
+{
+    -fx-background-image: url('../Images/background7.jpeg');
+    -fx-background-size: 100% 100%;
+}
+
+.Text1
+{
+    -fx-font-size: 30;
+    -fx-font-weight: bold;
+    -fx-fill: #000000;
+}
+
+.Text2
+{
+    -fx-font-size: 17;
+    -fx-fill: #000000;
+}
+
+.Text3
+{
+    -fx-font-size: 17;
+    -fx-fill: #0000ff;
+}
+
+.HomeButton
+{
+    -fx-pref-width: 65;
+    -fx-pref-height: 65;
+    -fx-padding: 10 20 10 20;
+    -fx-background-radius: 8;
+    -fx-background-position: 50%;
+    -fx-background-image: url('../Images/home.png');
+    -fx-background-color:
+        linear-gradient(#ffd65b, #e68400),
+        linear-gradient(#ffef84, #f2ba44),
+        linear-gradient(#ffea6a, #efaa22),
+        linear-gradient(#ffe657 0%, #f8c202 50%, #eea10b 100%),
+        linear-gradient(from 0% 0% to 15% 50%, rgba(255,255,255,0.9), rgba(255,255,255,0));
+}
+
+.HomeButton:pressed
+{
+    -fx-background-insets: 2 0 0 0,2 0 3 0, 2 0 4 0, 2 0 5 0;
+}
+
+.AppointmentsButton
+{
+    -fx-pref-width: 65;
+    -fx-pref-height: 65;
+    -fx-padding: 10 20 10 20;
+    -fx-background-radius: 8;
+    -fx-background-position: 50%;
+    -fx-background-image: url('../Images/appointments.png');
+    -fx-background-color:
+        linear-gradient(#ffd65b, #e68400),
+        linear-gradient(#ffef84, #f2ba44),
+        linear-gradient(#ffea6a, #efaa22),
+        linear-gradient(#ffe657 0%, #f8c202 50%, #eea10b 100%),
+        linear-gradient(from 0% 0% to 15% 50%, rgba(255,255,255,0.9), rgba(255,255,255,0));
+}
+
+.AppointmentsButton:pressed
+{
+    -fx-background-insets: 2 0 0 0,2 0 3 0, 2 0 4 0, 2 0 5 0;
+}
+
+.ApartmentsButton
+{
+    -fx-pref-width: 65;
+    -fx-pref-height: 65;
+    -fx-padding: 10 20 10 20;
+    -fx-background-radius: 8;
+    -fx-background-position: 50%;
+    -fx-background-image: url('../Images/apartments.png');
+    -fx-background-color:
+        linear-gradient(#ffd65b, #e68400),
+        linear-gradient(#ffef84, #f2ba44),
+        linear-gradient(#ffea6a, #efaa22),
+        linear-gradient(#ffe657 0%, #f8c202 50%, #eea10b 100%),
+        linear-gradient(from 0% 0% to 15% 50%, rgba(255,255,255,0.9), rgba(255,255,255,0));
+}
+
+.ApartmentsButton:pressed
+{
+    -fx-background-insets: 2 0 0 0,2 0 3 0, 2 0 4 0, 2 0 5 0;
+}
+
+.UpdateCancelButtons
+{
+   -fx-pref-width: 133;
+   -fx-pref-height: 44;
+   -fx-padding: 8 15 15 15;
+   -fx-background-insets: 0,0 0 5 0, 0 0 6 0, 0 0 7 0;
+   -fx-background-radius: 8;
+   -fx-background-color:
+          linear-gradient(#ffd65b, #e68400),
+          linear-gradient(#ffef84, #f2ba44),
+          linear-gradient(#ffea6a, #efaa22),
+          linear-gradient(#ffe657 0%, #f8c202 50%, #eea10b 100%),
+          linear-gradient(from 0% 0% to 15% 50%, rgba(255,255,255,0.9), rgba(255,255,255,0));
+   -fx-effect: dropshadow( gaussian , rgba(0,0,0,0.75) , 4,0,0,1 );
+   -fx-font-weight: bold;
+   -fx-background-radius: 30;
+   -fx-background-insets: 0,1,2,3,0;
+   -fx-text-fill: #000000;
+   -fx-font-weight: bold;
+   -fx-font-size: 15px;
+  -fx-padding: 10 20 10 20;
+}
+
+.UpdateCancelButtons:pressed
+{
+    -fx-background-insets: 2 0 0 0,2 0 3 0, 2 0 4 0, 2 0 5 0;
+}
+
+.Circle
+{
+    -fx-stroke: none;
+    -fx-fill:
+         linear-gradient(#ffd65b, #e68400),
+         linear-gradient(#ffef84, #f2ba44),
+         linear-gradient(#ffea6a, #efaa22),
+         linear-gradient(#ffe657 0%, #f8c202 50%, #eea10b 100%),
+         linear-gradient(from 0% 0% to 15% 50%, rgba(255,255,255,0.9), rgba(255,255,255,0));
+}

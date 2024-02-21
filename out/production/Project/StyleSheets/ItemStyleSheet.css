@@ -1,0 +1,16 @@
+.ItemText
+{
+    -fx-text-fill:#000000;
+    -fx-font-weight: bold;
+    -fx-font-size: 20;
+}
+
+.Rectangle
+{
+    -fx-arc-height: 20;
+    -fx-arc-width: 30;
+    -fx-fill: #1d3f8f;
+    -fx-stroke: none;
+    -fx-pref-width: 220;
+    -fx-pref-height: 210;
+}

@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="500.0" prefWidth="600.0" styleClass="Background" stylesheets="@../StyleSheets/AddApartmentDialogStyleSheet.css" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controllers.AddApartmentDialogController">
+   <children>
+      <Button fx:id="addButton" focusTraversable="false" layoutX="401.0" layoutY="449.0" mnemonicParsing="false" onAction="#addEvent" onMouseEntered="#changeCursor" styleClass="AddCancelButtons" text="Add" />
+      <Button fx:id="cancelButton" focusTraversable="false" layoutX="107.0" layoutY="449.0" mnemonicParsing="false" onAction="#cancelEvent" onMouseEntered="#changeCursor" styleClass="AddCancelButtons" text="Cancel" />
+      <Text layoutX="150.0" layoutY="43.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="Text1" text="Add-Apartment" textAlignment="CENTER" wrappingWidth="300.13671875">
+         <font>
+            <Font name="System Bold" size="40.0" />
+         </font>
+      </Text>
+      <Pane layoutX="11.0" layoutY="65.0" prefHeight="371.0" prefWidth="579.0">
+         <children>
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="371.0" layoutY="1.0" stroke="BLACK" strokeType="INSIDE" styleClass="Rectangle" width="579.0" />
+            <Pane layoutX="8.0" layoutY="16.0" prefHeight="68.0" prefWidth="277.0">
+               <children>
+                  <Text layoutY="20.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="Text2" text="Owner-SSN">
+                     <font>
+                        <Font size="17.0" />
+                     </font>
+                  </Text>
+                  <Line endX="100.0" layoutX="177.0" layoutY="68.0" startX="-177.0" />
+                  <TextField fx:id="ownerSSNField" focusTraversable="false" layoutY="26.0" prefHeight="36.0" prefWidth="278.0" promptText="Owner-SSN" />
+               </children>
+            </Pane>
+            <Pane layoutX="8.0" layoutY="84.0" prefHeight="68.0" prefWidth="277.0">
+               <children>
+                  <Text layoutY="20.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="Text2" text="City">
+                     <font>
+                        <Font size="17.0" />
+                     </font>
+                  </Text>
+                  <Line endX="100.0" layoutX="177.0" layoutY="68.0" startX="-177.0" />
+                  <TextField fx:id="cityField" focusTraversable="false" layoutY="26.0" prefHeight="36.0" prefWidth="278.0" promptText="City" />
+               </children>
+            </Pane>
+            <Pane layoutX="8.0" layoutY="152.0" prefHeight="68.0" prefWidth="277.0">
+               <children>
+                  <Text layoutY="20.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="Text2" text="Address">
+                     <font>
+                        <Font size="17.0" />
+                     </font>
+                  </Text>
+                  <Line endX="100.0" layoutX="177.0" layoutY="68.0" startX="-177.0" />
+                  <TextField fx:id="addressField" focusTraversable="false" layoutY="26.0" prefHeight="36.0" prefWidth="278.0" promptText="Address" />
+               </children>
+            </Pane>
+            <Pane layoutX="8.0" layoutY="288.0" prefHeight="68.0" prefWidth="277.0">
+               <children>
+                  <Text layoutY="20.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="Text2" text="Description">
+                     <font>
+                        <Font size="17.0" />
+                     </font>
+                  </Text>
+                  <Line endX="100.0" layoutX="177.0" layoutY="68.0" startX="-177.0" />
+                  <TextField fx:id="descriptionField" focusTraversable="false" layoutY="26.0" prefHeight="36.0" prefWidth="278.0" promptText="Description" />
+               </children>
+            </Pane>
+            <Pane layoutX="8.0" layoutY="220.0" prefHeight="68.0" prefWidth="277.0">
+               <children>
+                  <Text layoutY="20.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="Text2" text="Area">
+                     <font>
+                        <Font size="17.0" />
+                     </font>
+                  </Text>
+                  <Line endX="100.0" layoutX="177.0" layoutY="68.0" startX="-177.0" />
+                  <TextField fx:id="areaField" focusTraversable="false" layoutY="26.0" prefHeight="36.0" prefWidth="278.0" promptText="Area" />
+               </children>
+            </Pane>
+            <Pane layoutX="294.0" layoutY="16.0" prefHeight="68.0" prefWidth="277.0">
+               <children>
+                  <Line endX="100.0" layoutX="177.0" layoutY="68.0" startX="-177.0" />
+                  <Text fill="#6a00ff" layoutY="20.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="Text2" text="Price">
+                     <font>
+                        <Font size="17.0" />
+                     </font>
+                  </Text>
+                  <TextField fx:id="priceField" focusTraversable="false" layoutY="26.0" prefHeight="36.0" prefWidth="277.0" promptText="price" />
+               </children>
+            </Pane>
+            <Pane layoutX="294.0" layoutY="152.0" prefHeight="68.0" prefWidth="277.0">
+               <children>
+                  <Text layoutY="20.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="Text2" text="Type">
+                     <font>
+                        <Font size="17.0" />
+                     </font>
+                  </Text>
+                  <Line endX="100.0" layoutX="177.0" layoutY="68.0" startX="-177.0" />
+                  <RadioButton fx:id="rent" focusTraversable="false" layoutX="165.0" layoutY="34.0" mnemonicParsing="false" onAction="#typeEvent" onMouseEntered="#changeCursor" text="Rent">
+                     <font>
+                        <Font name="System Bold" size="12.0" />
+                     </font>
+                     <toggleGroup>
+                        <ToggleGroup fx:id="type" />
+                     </toggleGroup>
+                  </RadioButton>
+                  <RadioButton fx:id="sell" focusTraversable="false" layoutX="64.0" layoutY="34.0" mnemonicParsing="false" onAction="#typeEvent" onMouseEntered="#changeCursor" text="Sell" toggleGroup="$type">
+                     <font>
+                        <Font name="System Bold" size="12.0" />
+                     </font>
+                  </RadioButton>
+               </children>
+            </Pane>
+            <Pane layoutX="294.0" layoutY="84.0" prefHeight="68.0" prefWidth="277.0">
+               <children>
+                  <Text layoutY="20.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="Text2" text="Pictures">
+                     <font>
+                        <Font size="17.0" />
+                     </font>
+                  </Text>
+                  <Line endX="100.0" layoutX="177.0" layoutY="68.0" startX="-177.0" />
+                  <TextField fx:id="picturesField" editable="false" focusTraversable="false" layoutY="26.0" prefHeight="36.0" prefWidth="183.0" promptText="Pictures-Count" />
+                  <Button fx:id="addPictureButton" focusTraversable="false" layoutX="188.0" layoutY="32.0" mnemonicParsing="false" onAction="#addPictureEvent" onMouseEntered="#changeCursor" prefWidth="85.0" styleClass="AddCancelButtons" text="Add Picture" />
+               </children>
+            </Pane>
+            <Pane fx:id="pane" layoutX="294.0" layoutY="220.0" prefHeight="68.0" prefWidth="277.0" visible="false">
+               <children>
+                  <Text fx:id="dependingOnTypeLabel" layoutY="20.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="Text2" text="NULL">
+                     <font>
+                        <Font size="17.0" />
+                     </font>
+                  </Text>
+                  <Line endX="100.0" layoutX="177.0" layoutY="68.0" startX="-177.0" />
+                  <RadioButton fx:id="firstOne" layoutX="64.0" layoutY="34.0" mnemonicParsing="false" text="NULL">
+                     <font>
+                        <Font name="System Bold" size="12.0" />
+                     </font>
+                     <toggleGroup>
+                        <ToggleGroup fx:id="dependingOnType" />
+                     </toggleGroup>
+                  </RadioButton>
+                  <RadioButton fx:id="secondOne" layoutX="165.0" layoutY="34.0" mnemonicParsing="false" text="NULL" toggleGroup="$dependingOnType">
+                     <font>
+                        <Font name="System Bold" size="12.0" />
+                     </font>
+                  </RadioButton>
+               </children>
+            </Pane>
+         </children>
+      </Pane>
+      <Line endX="150.13671875" endY="0.0390625" layoutX="300.0" layoutY="53.0" startX="-150.0" startY="0.0390625" />
+   </children>
+</AnchorPane>

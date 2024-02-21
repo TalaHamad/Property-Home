@@ -1,0 +1,2 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<jdbcDataAdapter class="net.sf.jasperreports.data.jdbc.JdbcDataAdapterImpl"><name>New Data Adapter 1</name><driver>oracle.jdbc.driver.OracleDriver</driver><username>c##abdullah</username><password>123456</password><savePassword>true</savePassword><url>jdbc:oracle:thin:@192.168.1.7:1521:xe</url><database></database><serverAddress></serverAddress><classpath>C:\app\abdul\product\18.0.0\dbhomeXE\jdbc\lib\ojdbc8.jar</classpath></jdbcDataAdapter>

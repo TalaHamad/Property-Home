@@ -1,0 +1,77 @@
+.Background
+{
+ -fx-background-image: url('../Images/background2.jpeg');
+ -fx-background-size: 100% 100%;
+}
+
+.BackgroundText
+{
+    -fx-fill: #ffbf00;
+    -fx-font-size: 35;
+    -fx-font-weight: bold;
+    -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.8), 10, 0, 0, 0);
+}
+
+.LogInText
+{
+    -fx-fill: #000000;
+    -fx-font-size: 40;
+    -fx-font-weight: bold;
+}
+
+.LoginButton
+{
+    -fx-pref-width: 200;
+    -fx-pref-height: 36;
+    -fx-background-color:
+        linear-gradient(#ffd65b, #e68400),
+        linear-gradient(#ffef84, #f2ba44),
+        linear-gradient(#ffea6a, #efaa22),
+        linear-gradient(#ffe657 0%, #f8c202 50%, #eea10b 100%),
+        linear-gradient(from 0% 0% to 15% 50%, rgba(255,255,255,0.9), rgba(255,255,255,0));
+    -fx-effect: dropshadow( gaussian , rgba(0,0,0,0.75) , 4,0,0,1 );
+    -fx-font-weight: bold;
+    -fx-text-fill: #000000;
+    -fx-font-size: 20px;
+}
+
+.LoginButton:pressed
+{
+    -fx-background-insets: 2 0 0 0,2 0 3 0, 2 0 4 0, 2 0 5 0;
+}
+
+.ForgotPasswordButton
+{
+    -fx-pref-width: 225;
+    -fx-pref-height: 45;
+    -fx-background-color: #ffffff;
+    -fx-font-weight: bold;
+    -fx-text-fill: #000000;
+    -fx-font-size: 17px;
+}
+
+.ForgotPasswordButton:hover
+{
+    -fx-text-fill:  blue;
+}
+
+.BackButton
+{
+    -fx-pref-width: 85;
+    -fx-pref-height: 60;
+    -fx-background-color:
+        linear-gradient(#ffd65b, #e68400),
+        linear-gradient(#ffef84, #f2ba44),
+        linear-gradient(#ffea6a, #efaa22),
+        linear-gradient(#ffe657 0%, #f8c202 50%, #eea10b 100%),
+        linear-gradient(from 0% 0% to 15% 50%, rgba(255,255,255,0.9), rgba(255,255,255,0));
+    -fx-effect: dropshadow( gaussian , rgba(0,0,0,0.75) , 4,0,0,1 );
+    -fx-text-fill: #000000;
+    -fx-font-weight: bold;
+    -fx-font-size: 33px;
+}
+
+.BackButton:pressed
+{
+    -fx-background-insets: 2 0 0 0,2 0 3 0, 2 0 4 0, 2 0 5 0;
+}

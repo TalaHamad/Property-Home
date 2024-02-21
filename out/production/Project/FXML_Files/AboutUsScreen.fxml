@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane fx:id="parentContainer" prefHeight="800.0" prefWidth="800.0" styleClass="Background" stylesheets="@../StyleSheets/AboutUsScreenStyleSheet.css" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controllers.AboutUsScreenController">
+   <children>
+      <Button fx:id="getStartedButton" focusTraversable="false" layoutX="290.0" layoutY="625.0" mnemonicParsing="false" onAction="#switchToStartScreen" onMouseEntered="#changeCursor" prefHeight="16.0" prefWidth="220.0" styleClass="GetStartedButton" text="Get Started" />
+      <Pane layoutX="150.0" layoutY="240.0" prefHeight="320.0" prefWidth="500.0">
+         <children>
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="320.0" stroke="BLACK" strokeType="INSIDE" styleClass="Rectangle" width="500.0" />
+            <Text layoutX="9.0" layoutY="36.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="BackgroundText" text="Through us, you can see all the available options, find a suitable house for you in the city you want and the price you can afford, and then you book the apartment you chose. " wrappingWidth="481.91796875">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Text>
+            <Text layoutX="9.0" layoutY="246.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="BackgroundText" text="The last step is to sign the contract in our office.">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Text>
+            <Text layoutX="9.0" layoutY="292.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="BackgroundText" text="It is always our pleasure to make things easier for you." wrappingWidth="481.91796875">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Text>
+            <Text layoutX="9.0" layoutY="172.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="BackgroundText" text="These steps that used to take forever are now done within a few minutes. " wrappingWidth="481.91796875">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Text>
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>

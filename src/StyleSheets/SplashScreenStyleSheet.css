@@ -1,0 +1,14 @@
+.Background
+{
+    -fx-background-image: url('../Images/background3.jpeg');
+    -fx-background-size: 100% 100%;
+}
+
+.BackgroundText
+{
+    -fx-font-size: 80;
+    -fx-font-weight: bold;
+    -fx-font-style: italic;
+    -fx-fill: #ffbf00;
+    -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.8), 10, 0, 0, 0);
+}

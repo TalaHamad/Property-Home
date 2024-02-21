@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="anchorPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" onMouseClicked="#click" onMouseEntered="#changeCursor" prefHeight="210.0" prefWidth="220.0" stylesheets="@../StyleSheets/ItemStyleSheet.css" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controllers.ItemController">
+   <children>
+      <Rectangle arcHeight="20.0" arcWidth="30.0" fill="#1d3f8f" height="210.0" stroke="TRANSPARENT" strokeType="INSIDE" width="220.0" />
+      <ImageView fx:id="itemPicture" fitHeight="130.0" fitWidth="175.0" layoutX="23.0" layoutY="14.0" pickOnBounds="true" />
+      <Pane layoutX="23.0" layoutY="151.0" prefHeight="52.0" prefWidth="175.0">
+         <children>
+            <Rectangle fill="WHITE" height="52.0" stroke="WHITE" strokeType="INSIDE" width="175.0" />
+            <Label layoutX="13.0" layoutY="-4.0" styleClass="ItemText" text="Price:">
+               <font>
+                  <Font name="System Bold" size="20.0" />
+               </font>
+            </Label>
+            <Label fx:id="priceLabel" layoutX="71.0" layoutY="-4.0" prefHeight="17.0" prefWidth="78.0" styleClass="ItemText" text="NULL">
+               <font>
+                  <Font name="System Bold" size="20.0" />
+               </font>
+            </Label>
+            <Label layoutX="12.0" layoutY="24.0" styleClass="ItemText" text="State:">
+               <font>
+                  <Font name="System Bold Italic" size="20.0" />
+               </font>
+            </Label>
+            <Label fx:id="stateLabel" layoutX="71.0" layoutY="24.0" prefHeight="30.0" prefWidth="98.0" styleClass="ItemText" text="NULL">
+               <font>
+                  <Font name="System Bold" size="20.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>

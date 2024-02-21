@@ -1,0 +1,173 @@
+.Background
+{
+    -fx-background-image: url('../Images/background7.jpeg');
+    -fx-background-size: 100% 100%;
+}
+
+.HomeButton
+{
+    -fx-pref-width: 65;
+    -fx-pref-height: 65;
+    -fx-padding: 10 20 10 20;
+    -fx-background-radius: 8;
+    -fx-background-position: 50%;
+    -fx-background-image: url('../Images/home.png');
+    -fx-background-color:
+        linear-gradient(#ffd65b, #e68400),
+        linear-gradient(#ffef84, #f2ba44),
+        linear-gradient(#ffea6a, #efaa22),
+        linear-gradient(#ffe657 0%, #f8c202 50%, #eea10b 100%),
+        linear-gradient(from 0% 0% to 15% 50%, rgba(255,255,255,0.9), rgba(255,255,255,0));
+}
+
+.HomeButton:pressed
+{
+    -fx-background-insets: 2 0 0 0,2 0 3 0, 2 0 4 0, 2 0 5 0;
+}
+
+.MyProfileButton
+{
+     -fx-pref-width: 65;
+     -fx-pref-height: 65;
+     -fx-padding: 10 20 10 20;
+     -fx-background-radius: 8;
+     -fx-background-position: 50%;
+     -fx-background-image: url('../Images/my-profile.png');
+     -fx-background-color:
+         linear-gradient(#ffd65b, #e68400),
+         linear-gradient(#ffef84, #f2ba44),
+         linear-gradient(#ffea6a, #efaa22),
+         linear-gradient(#ffe657 0%, #f8c202 50%, #eea10b 100%),
+         linear-gradient(from 0% 0% to 15% 50%, rgba(255,255,255,0.9), rgba(255,255,255,0));
+}
+
+.MyProfileButton:pressed
+{
+    -fx-background-insets: 2 0 0 0,2 0 3 0, 2 0 4 0, 2 0 5 0;
+}
+
+.SearchDeleteReportButtons
+{
+      -fx-pref-width: 133;
+      -fx-pref-height: 44;
+      -fx-padding: 8 15 15 15;
+      -fx-background-insets: 0,0 0 5 0, 0 0 6 0, 0 0 7 0;
+      -fx-background-radius: 8;
+      -fx-background-color:
+             linear-gradient(#ffd65b, #e68400),
+             linear-gradient(#ffef84, #f2ba44),
+             linear-gradient(#ffea6a, #efaa22),
+             linear-gradient(#ffe657 0%, #f8c202 50%, #eea10b 100%),
+             linear-gradient(from 0% 0% to 15% 50%, rgba(255,255,255,0.9), rgba(255,255,255,0));
+      -fx-effect: dropshadow( gaussian , rgba(0,0,0,0.75) , 4,0,0,1 );
+      -fx-font-weight: bold;
+      -fx-background-radius: 30;
+      -fx-background-insets: 0,1,2,3,0;
+      -fx-text-fill: #000000;
+      -fx-font-weight: bold;
+      -fx-font-size: 15px;
+      -fx-padding: 10 20 10 20;
+}
+
+.SearchDeleteReportButtons:pressed
+{
+    -fx-background-insets: 2 0 0 0,2 0 3 0, 2 0 4 0, 2 0 5 0;
+}
+
+.Table-view
+{
+    -fx-background-color: transparent;
+}
+
+.Table-view .column-header-background .filler
+{
+    -fx-background-color: transparent;
+}
+
+.Table-view .column-header-background
+{
+    -fx-background-color: linear-gradient(to bottom, #1E90FF,#00FFFF);
+    -fx-background-radius: 7px 7px 0px 0px;
+    -fx-background-insets: 0 0 0 0;
+    -fx-padding: 0 0 5px 0;
+}
+
+.Table-view .column-header
+{
+    -fx-background-color: transparent;
+}
+
+.Table-view .table-cell
+{
+    -fx-border-color: transparent;
+    -fx-padding: 2 0 2 8px;
+}
+
+.Table-row-cell: odd
+{
+    -fx-background-color: #E0FFFF;
+    -fx-background-insets: 0, 0 0 1 0;
+    -fx-padding: 0.0em;
+}
+
+.Table-row-cell: even
+{
+    -fx-background-color: white;
+    -fx-background-insets: 0, 0 0 1 0;
+    -fx-padding: 0.0em;
+}
+
+.Table-row-cell:selected
+{
+   -fx-background-color: steelblue;
+}
+
+.Table-row-cell:selected .text
+{
+       -fx-fill: blue ;
+}
+
+.Table-view .virtual-flow .scroll-bar:vertical,
+.Table-view .virtual-flow .scroll-bar:vertical .track,
+.Table-view .virtual-flow .scroll-bar:vertical .track-background,
+.Table-view .virtual-flow .scroll-bar:horizontal,
+.Table-view .virtual-flow .scroll-bar:horizontal .track,
+.Table-view .virtual-flow .scroll-bar:horizontal .track-background
+{
+    -fx-background-color: transparent;
+}
+
+.Table-view .virtual-flow .scroll-bar:vertical .thumb
+{
+    -fx-background-color:  linear-gradient(to bottom, #1E90FF, #00FFFF);
+}
+
+.Table-view *.scroll-bar:horizontal *.increment-button,
+.Table-view *.scroll-bar:horizontal *.decrement-button
+{
+    -fx-background-color: null;
+    -fx-background-radius: 0;
+    -fx-background-insets: 0;
+    -fx-padding: 0;
+}
+
+.Table-view *.scroll-bar:horizontal *.increment-arrow,
+.Table-view *.scroll-bar:horizontal *.decrement-arrow
+{
+    -fx-background-color: null;
+    -fx-background-radius: 0;
+    -fx-background-insets: 0;
+    -fx-padding: 0;
+    -fx-shape: null;
+}
+
+.Table-row-cell: highlighted
+{
+    -fx-background-color: #7FFFD4;
+    -fx-background-radius: 20px;
+}
+
+.Table-view  .table-column
+{
+  -fx-alignment: CENTER;
+}

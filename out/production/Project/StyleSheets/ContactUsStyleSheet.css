@@ -1,0 +1,72 @@
+.Background
+{
+    -fx-background-image: url('../Images/background5.jpeg');
+    -fx-background-size: 100% 100%;
+}
+
+.HomeButton
+{
+    -fx-pref-width: 65;
+    -fx-pref-height: 65;
+    -fx-padding: 10 20 10 20;
+    -fx-background-radius: 8;
+    -fx-background-position: 50%;
+    -fx-background-image: url('../Images/home.png');
+    -fx-background-color:
+        linear-gradient(#ffd65b, #e68400),
+        linear-gradient(#ffef84, #f2ba44),
+        linear-gradient(#ffea6a, #efaa22),
+        linear-gradient(#ffe657 0%, #f8c202 50%, #eea10b 100%),
+        linear-gradient(from 0% 0% to 15% 50%, rgba(255,255,255,0.9), rgba(255,255,255,0));
+}
+
+.HomeButton:pressed
+{
+    -fx-background-insets: 2 0 0 0,2 0 3 0, 2 0 4 0, 2 0 5 0;
+}
+
+.Text1
+{
+    -fx-font-size: 40;
+    -fx-font-weight: bold;
+    -fx-fill: #162f69;
+}
+
+.Text2
+{
+    -fx-font-size: 30;
+    -fx-fill: #162f69;
+}
+
+.Text3
+{
+    -fx-font-size: 20;
+    -fx-font-weight: bold;
+    -fx-fill: #162f69;
+}
+
+.Rectangle1
+{
+    -fx-pref-width: 425;
+    -fx-pref-height: 154;
+    -fx-arc-height: 20;
+    -fx-arc-width: 30;
+    -fx-fill: white;
+    -fx-stroke: none;
+    -fx-opacity: 0.8;
+    -fx-pref-width: 425;
+    -fx-pref-height: 94;
+}
+
+.Rectangle2
+{
+    -fx-pref-width: 425;
+    -fx-pref-height: 53;
+    -fx-arc-height: 20;
+    -fx-arc-width: 30;
+    -fx-fill: white;
+    -fx-stroke: none;
+    -fx-opacity: 0.8;
+    -fx-pref-width: 425;
+    -fx-pref-height: 94;
+}
